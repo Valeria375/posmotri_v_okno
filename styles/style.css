@@ -36,3 +36,28 @@ ul,
 ol {
   list-style: none;
 }
+.content {
+  display: inline-flex;
+  justify-content: center;
+  margin: 133px 30px;
+  align-items: flex-end;
+  width: 1140px;
+  gap: 30px;
+}
+.search-form {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
+}
+.content__list {
+  flex-wrap: wrap;
+  max-height: 534px;
+  overflow: auto;
+}
+.result__video-container {
+  width: 711px;
+height: 386px;
+margin-bottom: 16px;
+}
