@@ -67,7 +67,7 @@ ol {
 .result__video-container {
   /* width: 100%; */
   width: 711px;
-  height: 386px;
+  height: 382px;
   margin-bottom: 16px;
   position: relative;
 }
@@ -167,6 +167,18 @@ ol {
 .content__video-card-description-container {
   max-width: 200px;
 }
+.content__card-link:focus {
+  outline: none;
+}
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+.content__card-link:active {
+  background-color: #545050;
+}
+.content__card-link_current {
+  background-color: #545050;
+}
 
 .visually-hidden {
   position: absolute;
@@ -259,16 +271,4 @@ ol {
 }
 .more-button {
   width: 100%;
-}
-.content__card-link:focus {
-  outline: none;
-}
-.content__card-link:focus-visible {
-  outline: 1px solid #fff;
-}
-.content__card-link:active {
-  background-color: #545050;
-}
-.content__card-link_current {
-  background-color: #545050;
 }
