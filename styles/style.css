@@ -78,7 +78,7 @@ ol {
   object-position: center;
 }
 .content__list-item {
-  padding-top: 30px;
+  margin-bottom: 30px;
 }
 .content__details {
   width: 100%;
@@ -89,7 +89,7 @@ ol {
   gap: 26px;
 }
 .content__list-item:last-child {
-  padding-top: 0;
+  margin-bottom: 0;
 }
 .content__video-card {
   display: flex;
@@ -270,4 +270,7 @@ ol {
 }
 .more-button {
   width: 100%;
+}
+.search-form__label:has(.search-form__pseudo-checkbox):hover {
+  text-decoration: underline;
 }
