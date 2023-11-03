@@ -39,19 +39,26 @@ ol {
 }
 .content {
   display: flex;
+  flex-direction: row;
+  position: relative;
   /* justify-content: center; 111*/
   /* padding: 133px 30px; */
   /* margin-top: 133px; 111*/
   align-items: end;
   margin: auto;
   /* width: 100%; */
-  width: 1140px;
+  /* width: 1140px; */
+  inline-size: 1140px;
+  block-size: 534px;
+
   /* height: 534px; 111*/
   gap: 30px;
   /* background-color: antiquewhite; 111*/
 }
 .search-form {
   display: flex;
+  flex-direction: row;
+gap:40px;
   /* align-items: flex-start; */
   justify-content: space-between;
   align-items: start;
@@ -63,9 +70,15 @@ ol {
   /* flex-wrap: wrap; */
   max-height: 298px;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .result__video-container {
   /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+justify-content: end;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
@@ -77,16 +90,16 @@ ol {
   object-fit: cover;
   object-position: center;
 }
-.content__list-item {
-  margin-bottom: 30px;
+/* .content__list-item {
+  margin-bottom: 30px; */
 }
 .content__details {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   /* background-color: aquamarine; */
   flex-direction: column;
-  gap: 26px;
+  /* gap: 26px; */
 }
 .content__list-item:last-child {
   margin-bottom: 0;
@@ -122,6 +135,7 @@ ol {
   /* align-items: flex-start; */
   line-height: 120%;
   padding-right: 5px;
+  margin-bottom: 6.5px;
 }
 .search-form__submit-button {
   width: 194px;
@@ -135,6 +149,7 @@ ol {
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
+  margin-bottom: 26px;
 }
 .content__accent {
   color: #545050;
@@ -142,7 +157,7 @@ ol {
 .content__video-card-title {
   font-family: Oswald, sans-serif;
   font-size: 30px;
-  /* font-style: normal; */
+  font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 30px */
   margin-bottom: 5px;
@@ -163,6 +178,7 @@ ol {
 }
 .content__video-card-description-container {
   max-width: 200px;
+  flex-grow: 1;
 }
 .content__card-link:focus {
   outline: none;
@@ -191,14 +207,16 @@ ol {
 }
 .search-form__checkbox-list {
   display: flex;
+  align-items: center;
   gap: 15px;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: "";
   background-color: #fff;
   height: 15px;
   width: 15px;
+  margin: 1.5px;
 }
 .search-form__pseudo-checkbox {
   display: flex;
