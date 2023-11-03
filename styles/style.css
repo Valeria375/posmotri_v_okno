@@ -227,7 +227,7 @@ ol {
   line-height: 120%;
   color: #fff;
   min-width: 225px;
-  padding: 1.5px 0;
+  padding: 2.5px 0;
   /* background-color: aqua; */
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -250,8 +250,9 @@ ol {
   font-size: 18px;
   font-weight: 700;
   line-height: 120%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  /* padding-top: 6px;
+  padding-bottom: 5px; */
+  padding: 6px 0;
   background-color: transparent;
   border: 1px solid currentColor;
   cursor: pointer;
