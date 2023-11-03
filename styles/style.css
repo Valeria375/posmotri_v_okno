@@ -41,7 +41,7 @@ ol {
   display: flex;
   /* justify-content: center; 111*/
   /* padding: 133px 30px; */
-/* margin-top: 133px; 111*/
+  /* margin-top: 133px; 111*/
   align-items: end;
   margin: auto;
   /* width: 100%; */
@@ -99,7 +99,7 @@ ol {
 }
 .content__card-link {
   display: block;
-  padding: 2px;
+  margin: 2px;
   color: #fff;
   text-decoration: none;
 }
@@ -130,7 +130,7 @@ ol {
 }
 .title {
   /* color: #fff; */
-  font-family: Oswald,sans-serif;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   /* font-style: normal; */
   font-weight: 700;
@@ -139,12 +139,6 @@ ol {
 }
 .content__accent {
   color: #545050;
-}
-.content__card-link {
-  display: block;
-  text-decoration: none;
-  padding: 2px;
-  color: #fff;
 }
 .content__video-card-title {
   font-family: Oswald, sans-serif;
@@ -162,8 +156,11 @@ ol {
   /* background-color: bisque; */
   font-size: 18px;
   font-weight: 400;
-  line-height: 16.2px; /* 90% */
+  line-height: 90%; /*  16.2px */
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 200px;
 }
 .content__video-card-description-container {
   max-width: 200px;
@@ -189,8 +186,8 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
-.search-form__fieldset{
+}
+.search-form__fieldset {
   border: none;
 }
 .search-form__checkbox-list {
@@ -199,7 +196,7 @@ ol {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   background-color: #fff;
   height: 15px;
   width: 15px;
@@ -222,7 +219,7 @@ ol {
   line-height: 120%;
 }
 .search-form__textfield {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 120%;
@@ -230,8 +227,8 @@ ol {
   min-width: 225px;
   padding: 2.5px 0;
   /* background-color: aqua; */
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   border-left: none;
   border-right: none;
   background-color: transparent;
@@ -246,7 +243,7 @@ ol {
 }
 
 .button {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
