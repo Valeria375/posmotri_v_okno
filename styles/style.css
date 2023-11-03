@@ -152,6 +152,7 @@ ol {
   /* font-style: normal; */
   font-weight: 700;
   line-height: 100%; /* 30px */
+  padding-bottom: 5px;
   text-transform: uppercase;
   text-overflow: ellipsis;
   overflow: hidden;
