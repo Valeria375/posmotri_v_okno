@@ -18,7 +18,15 @@ html {
   font-size: 18px;
   background-color: #1b1919;
 }
-
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 h1,
 h2,
 h3,
@@ -194,15 +202,7 @@ justify-content: end;
   background-color: #545050;
 }
 
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
+
 .search-form__fieldset {
   border: none;
 }
